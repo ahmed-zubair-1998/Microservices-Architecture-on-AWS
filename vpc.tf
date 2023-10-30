@@ -54,7 +54,7 @@ resource "aws_route_table_association" "public" {
 }
 
 resource "aws_subnet" "private" {
-  count = var.public_subnet_count
+  count = var.private_subnet_count
 
   vpc_id = aws_vpc.main.id
   # 10.255.0.0/20 -> 10.255.0.0/24
