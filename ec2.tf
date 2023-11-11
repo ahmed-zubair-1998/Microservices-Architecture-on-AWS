@@ -18,7 +18,7 @@ resource "aws_instance" "database" {
 resource "aws_instance" "consul_server" {
   count = var.consul_server_count
 
-  ami                         = "ami-0571c1aedb4b8c5fc"
+  ami                         = "ami-0efcece6bed30fd98"
   instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.private[count.index].id
   associate_public_ip_address = false

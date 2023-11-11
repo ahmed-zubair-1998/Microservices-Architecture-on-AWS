@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Hello Consul Server!"
+
 # Install Consul.  This verifies the download via GPG and then creates...
 # 1 - a default /etc/consul.d/consul.hcl
 # 2 - a default systemd consul.service file
